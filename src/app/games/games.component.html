@@ -1,0 +1,45 @@
+ <div class="container">
+  <div class="row">
+    <div class="col-12">
+      
+        <h2>LEADERBOARD</h2>
+        <h3 class="text-muted">SCORING</h3>
+        <p>Events will be worth up to 100 points, and teams earn points based on their finish (see chart). 
+            At the end of the weekend, the team with the most points is the winner. Teams that tie receive the same number of points. 
+            If a team fails to complete an event within the time cap (for timed events),
+            its  score will be capped, and it will receive a 1-second penalty for each rep not completed.</p>
+    
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Points</th>
+                <th scope="col">First Cut</th>
+                <th scope="col">Second Cut</th>
+                <th scope="col">Ruck</th>
+                <th scope="col">Sprint Couplet</th>
+                <th scope="col">Mary</th>
+                <th scope="col">Sprint</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr  *ngFor="let item of team" >
+                <th scope="row">{{item.position}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.points}}</td>
+                <td>{{item.firstCut}}</td>
+                <td>{{item.secondCut}}</td>
+                <td>{{item.ruck}}</td>
+                <td>{{item.sprintCouplet}}</td>
+                <td>{{item.mary}}</td>
+                <td>{{item.sprint}}</td>
+              </tr>
+            </tbody>
+          </table>
+      
+    </div>
+  </div>
+</div>
+ 
